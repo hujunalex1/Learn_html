@@ -1,0 +1,52 @@
+<html>
+<!-- style标签用法-->
+<head>
+<style type="text/css">
+h1 {color: red}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: blue;
+}
+
+</style>
+</head>
+
+<body>
+<em><h1>test</h1></em>
+<!-- html链接-->
+<p> <a href="hr.html"> 本地链接</a>
+</p>
+
+<p><a href="http://www.baidu.com"> 打开internet上的链接</a>
+</p>
+<div style="color:red">
+<p>
+ 我是Hotdog。戳我啊：
+ <!-- 图片链接-->
+ <a href="hr.html"> <img border="0" src="images/test.jpg" align="center">
+ </a> <br/>
+ <!-- 弹出新窗口-->
+ <a href="http://www.lizi.com" target="_blank">丽子美妆</a> 
+</p>
+<p>
+一个gif动画
+<img src="images/eg_cute.gif" width="60" height="60" alt="so cute"/>
+</p>
+<!--带有可点击区域的图像映射-->
+<p>
+<img src="images/cc.jpg" width="200" height="200" usemap="#ccmap" alt="cc"/>
+<map name="ccmap" id="ccmap">
+<area shape="circle" coords="100,100,10" href="hr.html">
+</map>
+</p>
+</div>                 
+</body>
+</html>
