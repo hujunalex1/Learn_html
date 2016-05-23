@@ -2,7 +2,10 @@
 <!-- style标签用法-->
 <head>
 <style type="text/css">
-h1 {color: red}
+  h1 {color: red}
+  p {
+    color: green;
+  }
 table tr td,th{border: 1px solid #000;}
 </style>
 </head>
@@ -83,9 +86,9 @@ table tr td,th{border: 1px solid #000;}
    <form action="save.php" method="post" >
     <label>性别:</label>
     <label>男</label>
-    <input type="radio" value="1"  name="gender" checked="checked" />
+    <input type="radio" value="male"  name="sex" checked="checked" />
     <label>女</label>
-    <input type="radio" value="2"  name="gender" />
+    <input type="radio" value="female"  name="sex" />
     <br/>
     你喜欢哪种运动？
     <input type="checkbox" name="checkbox1" value="篮球"> 篮球
