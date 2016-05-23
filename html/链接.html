@@ -3,37 +3,101 @@
 <head>
 <style type="text/css">
 h1 {color: red}
+table tr td,th{border: 1px solid #000;}
 </style>
 </head>
 
 <body>
-<h1>test</h1>
-<!-- html链接-->
-<p> <a href="hr.html"> 本地链接</a>
-</p>
+  <em><h1>test</h1></em>
+  <!-- html链接-->
+  <p> <a href="hr.html"> 本地链接</a>
+  </p>
 
-<p><a href="http://www.baidu.com"> 打开internet上的链接</a>
-</p>
-<div style="color:red">
-<p>
- 我是Hotdog。戳我啊：
- <!-- 图片链接-->
- <a href="hr.html"> <img border="0" src="images/test.jpg" align="center">
- </a> <br/>
- <!-- 弹出新窗口-->
- <a href="http://www.lizi.com" target="_blank">丽子美妆</a> 
-</p>
-<p>
-一个gif动画
-<img src="images/eg_cute.gif" width="60" height="60" alt="so cute"/>
-</p>
-<!--带有可点击区域的图像映射-->
-<p>
-<img src="images/cc.jpg" width="200" height="200" usemap="#ccmap" alt="cc"/>
-<map name="ccmap" id="ccmap">
-<area shape="circle" coords="100,100,10" href="hr.html">
-</map>
-</p>
-</div>                 
+  <p><a href="http://www.baidu.com"> 打开internet上的链接</a>
+  </p>
+  <div style="color:red">
+  <p>
+   我是Hotdog。戳我啊：
+   <!-- 图片链接-->
+   <a href="hr.html"> <img border="0" src="images/test.jpg" align="center">
+   </a> <br/>
+   <!-- 弹出新窗口-->
+   <a href="http://www.lizi.com"  title="丽子美妆app" target="_blank">丽子美妆</a> 
+  </p>
+  <p>
+  一个gif动画
+  <img src="images/eg_cute.gif" width="60" height="60" alt="so cute"/>
+  </p>
+  <!--带有可点击区域的图像映射-->
+  <p>
+  <img src="images/cc.jpg" width="200" height="200" usemap="#ccmap" alt="cc"/>
+  <map name="ccmap" id="ccmap">
+  <area shape="circle" coords="100,100,10" href="hr.html">
+  </map>
+  </p>
+  </div>
+
+  <table summary="班级成绩表"> 
+  <caption>本表格记录2012年到2013年库存记录</caption>
+    <tr>
+      <th>班级</th>
+      <th>学生数</th>
+      <th>平均成绩</th>
+    </tr>
+    <tr>
+      <td>一班</td>
+      <td>30</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>二班</td>
+      <td>35</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>三班</td>
+      <td>32</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+
+  <p>1922年的春天，一个想要成名名叫卡拉威（马奎尔Tobey Maguire 饰）的作家，离开了美国中西部，来到了纽约。那是一个道德感渐失，爵士乐流行，走私为王，股票飞涨的时代。为了追寻他的美国梦，他搬入纽约附近一海湾居住。</p><br/>
+      <p>菲茨杰拉德，二十世纪美国文学巨擘之一，兼具作家和编剧双重身份。他以诗人的敏感和戏剧家的想象为"爵士乐时代"吟唱华丽挽歌，其诗人和梦想家的气质亦为那个奢靡年代的不二注解。</p>
+  <a href="mailto:yy@imooc.com?subject=观了不起的盖茨比有感&body=你好，对此评论有些想法">对此影评有何感想，发送邮件给我</a><br/><br/>
+
+  <form  method="post" action="save.php">
+      账户: 
+  <input type="text" name="myname"/>  
+    <br/>
+    密码: 
+  <input type="password" name="pass"/>
+<!-- 多行文本输入-->
+  </form> 
+  <form action="save.php" method="post" >
+      <label>留言：</label>
+      <textarea cols="50" rows="10">在这里输入内容...</textarea>
+      <input type="submit" value="确定"  name="submit" />
+      <input type="reset" value="重置"  name="reset" />
+  </form> <br/>
+   <form action="save.php" method="post" >
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" checked="checked" />
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+    <br/>
+    你喜欢哪种运动？
+    <input type="checkbox" name="checkbox1" value="篮球"> 篮球
+    <input type="checkbox" name="checkbox1" value="足球">足球<br/>
+    <!--下拉列表-->
+    <label>爱好:</label>
+    <select>
+      <option value="看书">看书</option>
+      <option value="旅游" selected="selected">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+    </select>
+  </form>
 </body>
 </html>
