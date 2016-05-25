@@ -16,11 +16,35 @@
 		.hj{
 			font-size: 30px;
 		}
+		.sports>li{               /*子选择器*/
+			color: red;
+			border:1px solid red;
+		}
+		* {font-size: 20px;} /*通用选择器：作用html中所有标签元素*/
+		a:hover{  			/*伪类选择符:给标签元素的鼠标滑过的状态来设置字体颜色，常使用在a标签上*/
+			color: red;
+			font-size:30px;
+		}
 	</style>
 	
 </head>
 <body>
-	<p>慕课网，<span class="sky">超酷的互联网</span>、IT技术免费学习平台，创新的网络一站式学习、实践体验；<span id="road">服务及时贴心</span>，内容专业、<span class="sky hj">有趣易学</span>。专注服务互联网工程师快速成为技术高手！</p>
+	<p>慕课网，<span class="sky">超酷的互联网</span>、<a href="http://www.baidu.com">IT技术免费学习平台</a>，创新的网络一站式学习、实践体验；<span id="road">服务及时贴心</span>，内容专业、<span class="sky hj">有趣易学</span>。专注服务互联网工程师快速成为技术高手！</p>
 	<h1 style="color:red">hujun</h1><!-- 内联式css样式 -->
+	 <u1 class="sports">
+	 <li>水果
+        <ul>
+        	<li>香蕉</li>
+            <li>苹果</li>
+            <li>梨</li>
+        </ul>
+    </li>
+    <li>蔬菜
+    	<ul>
+        	<li>白菜</li>
+            <li>油菜</li>
+            <li>卷心菜</li>
+        </ul>
+    </li>
 	</body>
 </html>
