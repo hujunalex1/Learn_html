@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>style样式</title>
+<style type="text/css">
+	.two{
+		border:1px solid #ccc;
+		width:230px;
+		height:50px;
+		background:#9CF;
+		font-size: 50px;
+		color:blue;
+	}
+</style>
+</head>
+<body>
+  <h2 id="con">I love JavaScript</h2>
+  <p1 id="p1"> JavaScript使网页显示动态效果并实现与用户交互功能。</p1>
+  <input type="button" onclick="add()" name="点击test" value="add">
+  <script type="text/javascript">
+    function add(){
+ 	var hj= document.getElementById('p1');
+ 	hj.className="two";
+
+    }
+
+  </script>
+</body>
+</html>
