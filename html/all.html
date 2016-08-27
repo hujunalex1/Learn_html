@@ -12,12 +12,30 @@
     color: red; /*嵌入式css样式*/
   }
 table tr td,th{border: 1px solid #000;}
+.btn-danger{
+  color: #FF0000;
+}
+
+.green-border{
+  border-radius: 50%;
+  border-color: #0000FF;
+  border-width: 10px;
+  border-style: solid;
+}
 </style>
+
 </head>
 
 <body>
   <em><h1>test</h1></em>
   <!-- html链接-->
+  <<h2 id="con">I love JavaScript</h2>
+  <script type="text/javascript">
+    var mychar= document.getElementById("con");
+    mychar.style.color="red";
+ 
+
+  </script>
   <p> <a href="hr.html"> 本地链接</a>
   </p>
   <p>慕课网，<span>超酷的互联网</span>、<span>IT技术免费学习平台，</span>创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！</p>
@@ -39,7 +57,7 @@ table tr td,th{border: 1px solid #000;}
   </p>
   <!--带有可点击区域的图像映射-->
   <p>
-  <img src="images/cc.jpg" width="200" height="200" usemap="#ccmap" alt="cc"/>
+  <img class="green-border" src="images/cc.jpg" width="200" height="200" usemap="#ccmap" alt="cc"/>
   <map name="ccmap" id="ccmap">
   <area shape="circle" coords="100,100,10" href="hr.html">
   </map>
@@ -77,7 +95,7 @@ table tr td,th{border: 1px solid #000;}
 
   <form  method="post" action="save.php">
       账户: 
-  <input type="text" name="myname"/>  
+  <input type="text" name="myname" placeholder="输入您" />  
     <br/>
     密码: 
   <input type="password" name="pass"/>
@@ -98,7 +116,8 @@ table tr td,th{border: 1px solid #000;}
     <br/>
     你喜欢哪种运动？
     <input type="checkbox" name="checkbox1" value="篮球"> 篮球
-    <input type="checkbox" name="checkbox1" value="足球">足球<br/>
+    <input type="checkbox" name="checkbox1" value="足球">足球
+    <input type="checkbox" name="checkbox1" value="羽毛球" checked="checked">羽毛球<br/>
     <!--下拉列表-->
     <label>爱好:</label>
     <select>
@@ -108,10 +127,13 @@ table tr td,th{border: 1px solid #000;}
       <option value="购物">购物</option> 
    </select> <br/>
     <label >姓名：</label>
-    <input type="text" value=" " name="myName " />
+    <input type="text" required name="myName " />
     <input type="submit" value="提交" name="submitBtn" />
     <input type="reset" name="重置"/>
+
   </form>
+  <button class="btn-danger">gangge</button>
+  <button>Delete</button>
   <!--无序列表 -->
   <ul>
     <li>apple</li>
@@ -122,6 +144,14 @@ table tr td,th{border: 1px solid #000;}
    <li>apple</li>
    <li>peer</li>
  </ol>
+<<<<<<< HEAD
  teet
+=======
+ <!--
+  <img src="/images/running-cat.jpg" class="img-responsive">
+  <button class="btn btn-block btn-primary">Like</button>
+  <button class="btn btn-block btn-info">Info</button>
+  <button class="btn btn-block  btn-danger">Delete</button>
+  -->
 </body>
 </html>
